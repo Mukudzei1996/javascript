@@ -1,0 +1,18 @@
+/* Styling an element */
+p {
+    color:black;
+    font-size: 18px;
+}
+
+/* Styling a class */
+.Hobbies {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Styling an ID */
+#main-heading {
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+}
