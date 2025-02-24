@@ -22,10 +22,10 @@
         ];
         
         // Prompt user for a number
-        let userNumber = parseInt(prompt("Enter a number:"));
+        var number = prompt("Please enter a number:");
         
         // Calculate modulus and select quote
-        var index = userNumber % quotes.length;
+        var index = number % quotes.length;
         document.getElementById("quote").textContent = quotes[index];
         
         // Array of favorite websites
