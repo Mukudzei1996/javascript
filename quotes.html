@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote of the Day</title>
-    <script src="scripts2.js"></script>
 </head>
 <body>
     <h1>Quote of the Day</h1>
@@ -12,5 +11,57 @@
     
     <h2>Favorite Websites</h2>
     <ul id="websites"></ul>
+    <script>
+        // Array of 5 quotes
+        var quotes = [
+            "If you want to live a happy life, tie it to a goal, not to people or things.",
+            "Money and success do not change people; they merely amplify what is already there.",
+            "Many of life failures are people who did not realize how close they were to success when they gave up.",
+            "Not how long, but how well you have lived is the main thing.",
+            "In order to write about life first you must live it."
+        ];
+        
+        // Prompt user for a number
+        let userNumber = parseInt(prompt("Enter a number:"));
+        
+        // Calculate modulus and select quote
+        var index = userNumber % quotes.length;
+        document.getElementById("quote").textContent = quotes[index];
+        
+        // Array of favorite websites
+        var websites = [
+            "https://www.google.com",
+            "https://www.youtube.com",
+            "https://www.facebook.com"
+        ];
+        
+        // Display websites
+        function displayWebsites() {
+            let websiteList = document.getElementById("websites");
+            websiteList.innerHTML = ""; // Clear list
+            websites.forEach(url => {
+                let li = document.createElement("li");
+                let a = document.createElement("a");
+                a.href = url;
+                a.textContent = url;
+                a.target = "_blank";
+                li.appendChild(a);
+                websiteList.appendChild(li);
+            });
+        }
+        
+        displayWebsites();
+        
+        // Prompt user for favorite website
+        var newWebsite = prompt("Please enter your favorite website:");
+        if (newWebsite) {
+            websites.push(newWebsite); // Add to the end of the array
+            websites.shift(); // Remove first website
+        }
+        
+        // Display updated websites
+        displayWebsites();
+    </script> 
+   
 </body>
 </html>
