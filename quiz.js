@@ -4,12 +4,12 @@ function quiz() {
     // Array of answers
     var answers = ["yellow", "orange", "red"];
     // Initialize the score to 0
-    let score = 0;
+    score = 0;
 
     // Loop through each question
-    for (let i = 0; i < questions.length; i++) {
+    for (i = 0; i < questions.length; i++) {
         // Initialize the number of guesses allowed for each question
-        let guesses = 3;
+        guesses = 3;
         // While the user has guesses remaining
         while (guesses > 0) {
             // Prompt the user for an answer
