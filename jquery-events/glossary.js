@@ -28,10 +28,9 @@ $('.pic').hover(
       var imgDivId = '#' + $(this).attr('title');
       
       // Get the X and Y coordinates of the mouse
-      var xPos = evt.pageX + 150; // Adding 150 to x to avoid overlap
+      var xPos = evt.pageX + 150; 
       var yPos = evt.pageY;
       
-      // Position the image div and show it
       $(imgDivId).css({top: yPos, left: xPos}).show();
     },
     function() {

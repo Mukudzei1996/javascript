@@ -115,6 +115,6 @@ input[type='submit'] {
   
   .imgdiv {
 	position: absolute;
-	display: none; /* Optional, since we’ll hide via jQuery too */
+	
 	
   }
