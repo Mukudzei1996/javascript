@@ -30,12 +30,7 @@ main {
   color: darkgreen;
   font-weight: bold;
 }
-a:link {
-  color: darkgreen;
-}
-a:visited {
-  color: darkgreen;
-}
+
 legend {
   font-family: "Comic Sans MS";
   color: darkgreen;
